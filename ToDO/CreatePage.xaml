@@ -3,10 +3,10 @@
 	<ContentPage.Content>
 		<StackLayout Padding="20">
 			<Label Text="New To Do Item" TextColor="Maroon" />
-			<Entry x:Name="ToDoItem" Placeholder="Please enter your item" />
+			<Entry x:Name="ToDoItemName" Placeholder="Please enter your item" />
 
 			<StackLayout Orientation="Horizontal">
-				<Button x:Name="SaveButton" Text="Save" BackgroundColor="Maroon" TextColor="White" />
+				<Button x:Name="SaveButton" Text="Save" BackgroundColor="Maroon" TextColor="White" Clicked="SaveItem" />
 				<Button x:Name="ResetButton" Text="Reset" BackgroundColor="Silver" TextColor="White" />
 			</StackLayout>
 		</StackLayout>
