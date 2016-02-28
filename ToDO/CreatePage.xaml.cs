@@ -25,6 +25,10 @@ namespace ToDO
 		public void Clear() {
 			ToDoItemName.Text = String.Empty;
 		}
+
+		public void Review(object obj, EventArgs e) {
+			Navigation.PushAsync (new ReviewPage ());
+		}
 	}
 }
 

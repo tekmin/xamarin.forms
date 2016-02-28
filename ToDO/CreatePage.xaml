@@ -8,6 +8,7 @@
 			<StackLayout Orientation="Horizontal">
 				<Button x:Name="SaveButton" Text="Save" BackgroundColor="Maroon" TextColor="White" Clicked="SaveItem" />
 				<Button x:Name="ResetButton" Text="Reset" BackgroundColor="Silver" TextColor="White" />
+				<Button x:Name="ReviewButton" Text="Review" BackgroundColor="Fuchsia" TextColor="White" Clicked="Review" />
 			</StackLayout>
 		</StackLayout>
 	</ContentPage.Content>
