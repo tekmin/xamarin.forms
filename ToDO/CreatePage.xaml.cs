@@ -7,16 +7,16 @@ namespace ToDO
 {
 	public partial class CreatePage : ContentPage
 	{
-		public List<ToDoItem> ToDoList;
+		private List<ToDoItem> toDoItems;
 
 		public CreatePage ()
 		{
-			ToDoList = new List<ToDoItem> ();
+			toDoItems = new List<ToDoItem> ();
 			InitializeComponent ();
 		}
 
 		public void SaveItem(object obj, EventArgs e)  {
-			ToDoList.Add (new ToDoItem (
+			toDoItems.Add (new ToDoItem (
 				ToDoItemName.Text
 			));
 			Clear ();
@@ -27,7 +27,7 @@ namespace ToDO
 		}
 
 		public void Review(object obj, EventArgs e) {
-			Navigation.PushAsync (new ReviewPage ());
+			Navigation.PushAsync (new ReviewPage (toDoItems));
 		}
 	}
 }
