@@ -7,7 +7,7 @@ namespace ToDO
 {
 	public partial class ReviewPage : ContentPage
 	{
-		public List<ToDoItem> ToDoItems { get; set; }
+		public List<ToDoItem> ToDoItems;
 
 		public ReviewPage (List<ToDoItem> toDoItems)
 		{

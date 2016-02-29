@@ -13,12 +13,14 @@ namespace ToDO
 		{
 			toDoItems = new List<ToDoItem> ();
 			InitializeComponent ();
+			Title = DependencyService.Get<IAppInfo>().GetName ();
 		}
 
 		public void SaveItem(object obj, EventArgs e)  {
 			toDoItems.Add (new ToDoItem (
 				ToDoItemName.Text
 			));
+
 			Clear ();
 		}
 

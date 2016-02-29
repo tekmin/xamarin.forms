@@ -10,7 +10,7 @@
 						<ViewCell.View>
 							<StackLayout Padding="5">
 								<Label
-								TextColor="Aqua"
+								TextColor="Black"
 								FontSize="18"
 								Text="{Binding Name}"/>
 							</StackLayout>
